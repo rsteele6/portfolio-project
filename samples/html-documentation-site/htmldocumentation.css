@@ -1,0 +1,541 @@
+﻿/*
+Rebecca Steele
+3/8/2020
+COMI 1750-600 
+*/
+
+/* Global Selectors */
+
+html
+{
+    font-size:12px;
+}
+
+body 
+{
+    font-family: 'Montserrat', serif;
+}
+
+article 
+{
+    font-size: 1.25rem;
+    font-family: 'Spartan', serif;
+}
+
+p 
+{
+    font-weight: 400;
+}
+
+ol
+{
+    margin-left:20px;
+}
+
+h1 
+{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h2, h3 
+{
+    font-weight: bold;
+    color: rgb(95, 95, 95);
+    font-size: 1.5rem;
+    margin-bottom:30px;
+    margin-top:30px;
+}
+
+h3
+{
+    text-align:center;
+}
+
+h5
+{
+    color: red;
+}
+
+h6
+{
+    color:black;
+}
+
+a 
+{
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+    font-weight:bold;
+}
+
+header 
+{
+    color: rgb(95, 95, 95);
+}
+
+header a
+{
+    font-weight:normal;
+}
+
+footer 
+{
+    background-color: rgb(95, 95, 95);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer a
+{
+    text-decoration:none;
+    color:white;
+    font-weight:normal;
+}
+
+div 
+{
+    padding-bottom: 30px;
+}
+
+section 
+{
+    padding:20px 200px 20px 200px;
+
+}
+
+table 
+{
+    width: 60%;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left:175px;
+}
+
+table, th, td 
+{
+    text-align: center;
+    border: 1px solid black;
+    /* "collapses" the border so that it overlaps with the table borders */
+    border-collapse: collapse;
+}
+
+tr 
+{
+    background:white;
+}
+
+picture 
+{
+    padding-left:29px;
+}
+
+span
+{
+    font-weight:bold;
+}
+
+pre 
+{
+    margin-top: 10px;
+    margin-left: -160px;
+    color: black;
+}
+
+small
+{
+    font-style:italic;
+}
+
+strong 
+{
+    font-weight: bold;
+    color: black;
+}
+
+/* Example Code Classes and IDs */
+
+/* Use to override layout for executed example code*/
+
+.example-code 
+{
+    padding: 10px 10px 10px 10px;
+    margin-left:10px;
+}
+
+/* Styles the "Example" and "Result" boxes */
+
+.example-code-background 
+{
+    background: #cccccc;
+    padding-top: 10px;
+    border-radius: 22px;
+}
+
+/* EXAMPLE NAVBAR STYLING */
+
+#example-code-navbar {
+    list-style: none;
+    margin-left: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+#example-code-navbar ul, .example-code-background small, .example-code-background nav
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+/* All menu items */
+
+#example-code-navbar li 
+{
+    display: block;
+    position: relative;
+    float: left;
+    background: #4da6ff;
+}
+
+/* all submenu items */
+
+#example-code-navbar li li 
+{
+    font-size: 0.75em;
+    border-right: solid;
+    border-right-color: white;
+    border-width: thin;
+}
+
+/* Darkens the background of menu items when you hover over them*/
+
+#example-code-navbar li:hover 
+{
+    background-color: #0059b3
+}
+
+/* Example navbar - Unhides submenu items on hover */
+
+#example-code-navbar li:hover ul 
+{
+    display: block;
+}
+
+/* Top level menu links*/
+
+#example-code-navbar li a 
+{
+    display: block;
+    padding: 0;
+    text-decoration: none;
+    width: 150px;
+    line-height: 35px;
+    color: #ffffff;
+}
+
+/* submenu dropdowns */
+
+#example-code-navbar li ul 
+{
+    position: absolute;
+    padding: 0;
+    left: 0;
+    display: none; /* Hides submenu items */
+}
+
+/*END EXAMPLE NAVIGATION BAR*/
+
+/* EXAMPLE FOOTER*/
+
+#example-code-footer
+{
+    padding-right:10px;
+}
+
+/* END EXAMPLE FOOTER*/
+
+/* TOP NAVIGATION BAR */
+
+#top-banner 
+{
+    background-color: rgb(95, 95, 95);
+    box-shadow: 5px 15px #cccccc;
+    border-radius: 22px;
+    padding-bottom: 35px;
+}
+
+/* Makes sub-menu items appear in two columns. Use for longer lists*/
+
+.float-menu-items 
+{
+    columns: 2;
+    column-gap: 0px;
+}
+
+/* Styling for entire navbar region */
+
+#navbar 
+{
+    list-style: none;
+    margin-left: 350px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* All menu items*/
+
+#navbar li 
+{
+    display: block;
+    position: relative;
+    float: left;
+    background: #5F5F5F;
+}
+
+/* Styling for all submenu items - adds border between columns and reduces font size to 75% of the parent */
+
+#navbar li li 
+{
+    font-size: 0.75em;
+    border-right:solid;
+    border-right-color: white;
+    border-width:thin;
+}
+
+/* Lightens the background of menu items when you hover over them*/
+
+#navbar li:hover 
+{
+    background: #808080;
+}
+
+/* Unhides submenu items on hover */
+
+#navbar li:hover ul 
+{
+    display: block;
+}
+
+/* Top level menu links*/
+
+#navbar li a 
+{
+    display: block;
+    padding: 0;
+    text-decoration: none;
+    width: 150px;
+    line-height: 35px; 
+    color: #ffffff; 
+}
+
+/* Styling for submenu dropdowns */
+
+#navbar li ul 
+{
+    position: absolute;
+    padding: 0;
+    left: 0;
+    display: none; /* Hides submenu items */
+}
+/* END TOP NAVIGATION BAR */
+
+/* Resizes the cat memes in the img example */
+
+.example-code-background img 
+{
+    width: 40%;
+    height: 40%;
+    float: left;
+    margin-left: 50px;
+}
+
+/* Expands the div parent container with the cat meme images. I'm uncertain why I had to do this, but if don't, the div parent
+    container does not expand with the images.
+*/
+
+#cat-meme-expand-div 
+{
+    padding-bottom: 320px;
+}
+
+/* Allows the text after the cat images to appear under the pics instead of to the right of them */
+
+#cat-meme-expand-div p
+{
+    clear:left;
+}
+
+/* The following four IDs are used to demonstrate the different types of ordered lists */
+
+#ol-roman-lower 
+{
+    list-style: lower-roman;
+}
+
+#ol-roman-upper 
+{
+    list-style: upper-roman;
+}
+
+#ol-alpha-lower 
+{
+    list-style-type: lower-alpha;
+}
+
+#ol-alpha-upper 
+{
+    list-style-type:upper-alpha;
+}
+
+/* The following six IDs are for the heading examples and override any global settings */
+
+#example-code-heading-override h1, h2, h3, h4, h5, h6 {
+    color: initial;
+    text-align: initial;
+    font-weight: bold;
+    display:block;
+}
+
+#example-code-heading-override h1 
+{
+    font-size: 2em;
+}
+
+#example-code-heading-override h2
+{
+    font-size: 1.5em;
+}
+
+#example-code-heading-override h3 
+{
+    font-size: 1.17em;
+}
+
+#example-code-heading-override h4
+{
+    font-size: 1em;
+}
+
+#example-code-heading-override h5 
+{
+    font-size: .83em;
+}
+
+#example-code-heading-override h6 
+{
+    font-size: .67em;
+}
+
+/* The next two properties are for the font-size examples */
+
+#example-code-font-size-h2
+{
+    font-size:20px;
+}
+
+#example-code-font-size-paragraph
+{
+    font-size:0.75em;
+}
+
+/* The next two properties are for the font-family examples */
+
+#example-code-font-family-cs
+{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#example-code-font-family-lc 
+{
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+/* The next three properties are for the font-color examples */
+
+#example-code-font-color-named
+{
+    color:red;
+}
+
+#example-code-font-color-hex 
+{
+    color: #004d00;
+}
+
+#example-code-font-color-rgb 
+{
+    color: rgb(77, 148, 255)
+}
+
+/* The next four properties are for the background-color examples */
+
+#example-code-background-color-named, #example-code-background-color-hex, #example-code-background-color-rgb 
+{
+    width: 29%;
+    float: left;
+}
+
+#example-code-background-color-named 
+{
+    background-color: red;
+}
+
+#example-code-background-color-hex 
+{
+    background-color: #004d00;
+}
+
+#example-code-background-color-rgb 
+{
+    background-color: rgb(77, 148, 255)
+}
+
+/* As with the img page, I had to expand the div containing the background color divs because the parent container wasn't
+    expanding with them. 
+*/
+
+#example-code-background-expand-div 
+{
+    padding-bottom: 125px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+/* FOOTER-SPECIFIC */
+
+/* The two IDs below are for the little logos on the left and right sides of the footer. */
+#html-logo
+{
+    float:left;
+    padding-left:30px;
+    padding-top:5px;
+    height:40px;
+    width:40px;
+}
+
+#css-logo 
+{
+    float: right;
+    padding-right: 30px;
+    padding-top: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+#w3c-valid-css 
+{
+    float: right;
+    border: 0;
+    padding-right: 30px;
+    width: 88px;
+    height: 31px;
+}

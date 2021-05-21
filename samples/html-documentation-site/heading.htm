@@ -1,0 +1,130 @@
+﻿<!--Rebecca Steele
+3/8/2020
+COMI 1750-600 -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>The Heading Element</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="htmldocumentation.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/0a8d2a79bd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <article>
+        <div id="top-banner">
+            <header>
+                <!--Insert banner img -->
+                <picture>
+                    <source srcset="images/indexheadermobile.jpg" media="(max-width: 320px)">
+                    <source srcset="images/indexheader.jpg" media="(max-width: 1024px)" />
+                    <source srcset="images/indexheaderhires.jpg" media="(max-width: 1920px)">
+                    <img src="images/indexheader.jpg" alt="Homepage Banner">
+                </picture>
+
+                <!--Start  nav bar-->
+                <nav>
+                    <ul id="navbar">
+                        <li><a href="index.htm"><span class="fas fa-home fa-lg"></span></a></li>
+                        <li>
+                            <a href="#">HTML Elements</a>
+                            <ul class="navbar-hide-submenus float-menu-items">
+                                <li><a href="table.htm">Table</a></li>
+                                <li><a href="ol.htm">Ol</a></li>
+                                <li><a href="nav.htm">Nav</a></li>
+                                <li><a href="sub.htm">Subscript</a></li>
+                                <li><a href="footer.htm">Footer</a></li>
+                                <li><a href="br.htm">Break</a></li>
+                                <li><a href="img.htm">Img</a></li>
+                                <li><a href="heading.htm">Heading</a></li>
+                                <li><a href="paragraph.htm">Paragraph</a></li>
+                                <li><a href="italic.htm">Italic</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">CSS Properties</a>
+                            <ul class="navbar-hide-submenus">
+                                <li><a href="font-size.htm">Font-size</a></li>
+                                <li><a href="font-family.htm">Font-family</a></li>
+                                <li><a href="color.htm">Color</a></li>
+                                <li><a href="background-color.htm">Background-color</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="mailto:rsteele6@gmail.com">Contact</a></li>
+                    </ul>
+                </nav>
+                <!--end  nav bar-->
+            </header>
+        </div>
+        <!-- content starts here-->
+        <section>
+            <header><h1>The <span><code>&lt;h&gt;</code></span> Element</h1></header>
+
+            <p>
+                The <span><code>&lt;h&gt;</code></span> element is used for identifying document or section headings.
+                There are six levels of headings, with <span><code>&lt;h1&gt;</code></span> being the most important, 
+                and <span><code>&lt;h6&gt;</code></span> the least.
+            </p>
+            <p>
+                While heading tags do confer some text styling on their own, they're strictly for identifying content 
+                headings and should not be used to style text.
+            </p>
+
+            <h2>Example:</h2>
+
+            <div class="example-code-background">
+                <pre>
+                    <code>
+                        &lt;h1 class="example-code"&gt;Heading 1&lt;/h1&gt;
+                        &lt;h2 class="example-code"&gt;Heading 2&lt;/h2&gt;
+                        &lt;h3 class="example-code"&gt;Heading 3&lt;/h3&gt;
+                        &lt;h4 class="example-code"&gt;Heading 4&lt;/h4&gt;
+                        &lt;h5 class="example-code"&gt;Heading 5&lt;/h5&gt;
+                        &lt;h6 class="example-code"&gt;Heading 6&lt;/h6&gt;
+                    </code>
+                </pre>
+            </div>
+
+            <h2>Result:</h2>
+
+            <div class="example-code-background" id="example-code-heading-override">
+                <h1 class="example-code">Heading 1</h1>
+                <h2 class="example-code">Heading 2</h2>
+                <h3 class="example-code">Heading 3</h3>
+                <h4 class="example-code">Heading 4</h4>
+                <h5 class="example-code">Heading 5</h5>
+                <h6 class="example-code">Heading 6</h6>
+            </div>
+
+            <p>
+                For more details, please see the wiki page for this element at <a href="https://www.w3.org/MarkUp/html3/headings.html">w3c.org</a>.
+                <br /><br />
+                If you have any questions or comments, please contact <a href="mailto:rsteele6@gmail.com">me</a>
+            </p>
+        </section>
+    </article>
+
+    <footer>
+        <img id="html-logo" src="images/html5640px.png" alt="HTML5 Logo">
+        <img id="css-logo" src="images/csssmall.png" alt="CSS3 Logo">
+        <p id="w3c-valid-css">
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+            </a>
+        </p>
+        <small>&copy; 2020 by <a class="link-white" href="mailto:rsteele6@gmail.com"> Rebecca Steele.</a> All rights reserved</small>
+        <br /><br />
+        <small>Site created on March 8, 2020 for The Community College of Rhode Island | 400 East Ave. Warwick, RI 02886</small>
+    </footer>
+</body>
+</html>
